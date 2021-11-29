@@ -23,12 +23,29 @@ public class MemoryStoreRepository implements StoreRepository {
     @PostConstruct
     public void initialize() {
         stores = new ArrayList<>();
-        stores.add(new Store(1, "PRESTO12", "Hamburguesas", "Carnes",
-                "http://10.0.2.2:8080/stores/1/logo"));
-        stores.add(new Store(1, "KFC", "Pollo", "Carnes",
-                "http://10.0.2.2:8080/stores/2/logo"));
-        stores.add(new Store(1, "Fridays", "Pizza", "Pastas",
-                "http://10.0.2.2:8080/stores/3/logo"));
+        stores.add(new Store(1, "KFC", "Calle 57 # 13 - 13 sur", "11.1112, 18.556655",2,1,"ssss","sss",
+                "https://res.cloudinary.com/dc04oiqvh/image/upload/v1638224729/descarga_glthij.png","sss"));
+        stores.add(new Store(2, "PANAMERICANA", "Calle 57 # 13 - 13 sur", "11.1112, 18.556655",2,1,"ssss","sss",
+                "https://res.cloudinary.com/dc04oiqvh/image/upload/v1638224883/descarga_1_fd0dkh.png","sss"));
+        stores.add(new Store(3, "KTRONIX", "Calle 57 # 13 - 13 sur", "11.1112, 18.556655",2,1,"ssss","sss",
+                "https://res.cloudinary.com/dc04oiqvh/image/upload/v1638224949/descarga_2_exsayw.png","sss"));
+        stores.add(new Store(4, "JUMBO", "Calle 57 # 13 - 13 sur", "11.1112, 18.556655",2,1,"ssss","sss",
+                "https://res.cloudinary.com/dc04oiqvh/image/upload/v1638224986/descarga_gyb6mh.jpg","sss"));
+        stores.add(new Store(5, "FALABELLA", "Calle 57 # 13 - 13 sur", "11.1112, 18.556655",2,1,"ssss","sss",
+                "https://res.cloudinary.com/dc04oiqvh/image/upload/v1638227272/descarga_4_w2il1f.jpg","sss"));
+        stores.add(new Store(6, "ARROZ PAIZA", "Calle 57 # 13 - 13 sur", "11.1112, 18.556655",2,1,"ssss","sss",
+                "https://res.cloudinary.com/dc04oiqvh/image/upload/v1638225095/descarga_4_eqew6k.png","sss"));
+        stores.add(new Store(7, "AREPAS DOÑA JUANA", "Calle 57 # 13 - 13 sur", "11.1112, 18.556655",2,1,"ssss","sss",
+                "https://res.cloudinary.com/dc04oiqvh/image/upload/v1638225133/descarga_1_ic3wsh.jpg","sss"));
+        stores.add(new Store(8, "BUFFALO WINGS", "Calle 57 # 13 - 13 sur", "11.1112, 18.556655",2,1,"ssss","sss",
+                "https://res.cloudinary.com/dc04oiqvh/image/upload/v1638227159/descarga_8_icvkkn.png","sss"));
+        stores.add(new Store(9, "OLIMPICA", "Calle 57 # 13 - 13 sur", "11.1112, 18.556655",2,1,"ssss","sss",
+                "https://res.cloudinary.com/dc04oiqvh/image/upload/v1638225207/descarga_6_rfeegx.png","sss"));
+        stores.add(new Store(10, "FLAMINGO", "Calle 57 # 13 - 13 sur", "11.1112, 18.556655",2,1,"ssss","sss",
+                "https://res.cloudinary.com/dc04oiqvh/image/upload/v1638227223/descarga_3_k7gncp.jpg","sss"));
+       stores.add(new Store(11, "SOPAS DE LA ABUELA", "Calle 57 # 13 - 13 sur", "11.1112, 18.556655",2,1,"ssss","sss",
+                "https://res.cloudinary.com/dc04oiqvh/image/upload/v1638225331/descarga_2_df01wx.jpg","sss"));
+       
     }
 
     @Override

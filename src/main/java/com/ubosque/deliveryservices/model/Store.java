@@ -6,22 +6,37 @@ public class Store {
 
     private String name;
 
-    private String description;
+    private String direccion;
 
-    private String category;
+    private String geolocalizacion;
+    
+    private Integer telefono ;
+    
+    private Integer celular ;
+    
+    private String pagina ;
 
+    private String productos ;
+    
     private String logoUrl;
+    
+    private String foto;
 
     public Store() {
 
     }
 
-    public Store(Integer id, String name, String description, String category, String logoUrl) {
+    public Store(Integer id, String name, String direccion, String geolocalizacion, Integer telefono, Integer celular, String pagina, String productos, String logoUrl, String foto) {
         this.id = id;
         this.name = name;
-        this.description = description;
-        this.category = category;
+        this.direccion = direccion;
+        this.geolocalizacion = geolocalizacion;
+        this.telefono = telefono;
+        this.celular = celular;
+        this.pagina = pagina;
+        this.productos = productos;
         this.logoUrl = logoUrl;
+        this.foto = foto;
     }
 
     public Integer getId() {
@@ -40,20 +55,52 @@ public class Store {
         this.name = name;
     }
 
-    public String getDescription() {
-        return description;
+    public String getDireccion() {
+        return direccion;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
     }
 
-    public String getCategory() {
-        return category;
+    public String getGeolocalizacion() {
+        return geolocalizacion;
     }
 
-    public void setCategory(String category) {
-        this.category = category;
+    public void setGeolocalizacion(String geolocalizacion) {
+        this.geolocalizacion = geolocalizacion;
+    }
+
+    public Integer getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(Integer telefono) {
+        this.telefono = telefono;
+    }
+
+    public Integer getCelular() {
+        return celular;
+    }
+
+    public void setCelular(Integer celular) {
+        this.celular = celular;
+    }
+
+    public String getPagina() {
+        return pagina;
+    }
+
+    public void setPagina(String pagina) {
+        this.pagina = pagina;
+    }
+
+    public String getProductos() {
+        return productos;
+    }
+
+    public void setProductos(String productos) {
+        this.productos = productos;
     }
 
     public String getLogoUrl() {
@@ -63,16 +110,19 @@ public class Store {
     public void setLogoUrl(String logoUrl) {
         this.logoUrl = logoUrl;
     }
-    
-    
-    @Override
-    public String toString() {
-        return "Store{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", description='" + description + '\'' +
-                ", category='" + category + '\'' +
-                ", logoUrl='" + logoUrl + '\'' +
-                '}';
+
+    public String getFoto() {
+        return foto;
     }
+
+    public void setFoto(String foto) {
+        this.foto = foto;
+    }
+    
+
+
+
+ 
+    
+ 
 }
